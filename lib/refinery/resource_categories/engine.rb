@@ -11,7 +11,7 @@ module Refinery
           plugin.name = "resource_categories"
           plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.admin_resource_categories_path }
           plugin.pathname = root
-          plugin.hide_from_menu = true
+          plugin.hide_from_menu = false
         end
       end
 

@@ -1,6 +1,6 @@
 fr:
   refinery:
-    admin:
+    admin:    
       resources:
         actions:
           back_to_resources: Retourner à la liste des fichiers
@@ -8,6 +8,13 @@ fr:
             title: Catégories
             manage: Gérer les catégories
             new: Nouvelle catégorie
+            reorder: Réordonner les catégories
+            reorder_done: Fin de réordonnancement des catégories
+        records:
+          title: Catégories de fichiers
+          sorry_no_results: "Désolé ! Aucun résultat."
+          no_items_yet: 'Il n''y a actuellement aucune catégorie de fichiers. Cliquer sur "Créer un nouvelle catégorie" pour créer votre première catégorie.'
+        
         form:
           resource_categories: Catégories
   activerecord:

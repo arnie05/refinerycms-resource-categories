@@ -23,4 +23,20 @@
     <%= link_to t('.resource_categories.new'), refinery.new_admin_resource_category_path,
                 :class => 'folder_add_icon' %>
   </li>
+
+  <% if !searching? && ::Refinery::Admin::ResourceCategoriesController.sortable? && ::Refinery::ResourceCategory.many? %>
+    <li>
+      <%= action_label :reorder,
+                       refinery.admin_resource_categories_path,
+                       t('.resource_categories.reorder', what:  "ResourceCategories"), id: 'reorder_action'%>
+      <%= action_label :reorder_done,
+                       refinery.admin_resource_categories_path,
+                        t('.resource_categories.reorder_done', what: "ResourceCategories"), id: 'reorder_action_done', class: 'hidden'%>
+    </li>
+  <% end %>
+
+
 </ul>
+
+
+

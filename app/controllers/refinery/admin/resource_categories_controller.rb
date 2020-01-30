@@ -4,7 +4,12 @@ module Refinery
 
       crudify :'refinery/resource_category',
               :include => [:translations],
-              :paging => false
+              :paging => false,
+              :xhr_paging => false,
+              :sortable => true,
+              :searchable => true,
+              :search_conditions => '',
+              :order => "position ASC"
 
       private
 
